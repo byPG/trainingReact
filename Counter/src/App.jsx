@@ -7,6 +7,10 @@ function App() {
     setCounter(counter + 1);
   }
 
+  function handleReset() {
+    setCounter(0);
+  }
+
   return (
     <div>
       <header>
@@ -15,6 +19,8 @@ function App() {
       </header>
       <main>
         <button onClick={handleClick}>Kliknij!!</button>
+        <button onClick={handleReset}>Resetuj</button>
+        <input type="text" onChange={(e) => console.log(e.target.value)} />
         <p>Kliknięto: {counter}</p>
       </main>
     </div>
