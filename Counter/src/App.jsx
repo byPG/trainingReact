@@ -1,13 +1,21 @@
+import { useState } from "react";
+
 function App() {
+  const [counter, setCounter] = useState(0);
+
+  function handleClick() {
+    setCounter(counter + 1);
+  }
+
   return (
     <div>
       <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
         <h1>React Counter</h1>
         <p>use state exercise</p>
       </header>
       <main>
-        <button>Kliknij!!</button>
+        <button onClick={handleClick}>Kliknij!!</button>
+        <p>Kliknięto: {counter}</p>
       </main>
     </div>
   );
