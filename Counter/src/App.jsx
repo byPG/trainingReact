@@ -7,7 +7,7 @@ function App() {
         <p>use state exercise</p>
       </header>
       <main>
-        <button>Kliknij!</button>
+        <button>Kliknij!!</button>
       </main>
     </div>
   );
