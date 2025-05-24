@@ -15,7 +15,7 @@ function App() {
     <div>
       <header>
         <h1>React Counter</h1>
-        <p>use state exercise</p>
+        <p>use state - exercise</p>
       </header>
       <main>
         <button onClick={handleClick}>Kliknij!!</button>
