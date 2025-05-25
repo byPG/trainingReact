@@ -1,5 +1,40 @@
+import { useState } from "react";
+
 function App() {
-  return <div></div>;
+  const [newTask, setNewTask] = useState("");
+  const [tasksList, setTasksList] = useState([]);
+
+  function addTask() {
+    if (newTask.trim() === "") return;
+    setTasksList((prev) => [...prev, newTask]);
+    setNewTask("");
+  }
+
+  return (
+    <>
+      <header>
+        {/* <img src="" alt="" /> */}
+        <h2>To Do List</h2>
+      </header>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Write here your new task..."
+          onChange={(e) => setNewTask(e.target.value)}
+        />
+        <button onClick={addTask}>Add task!</button>
+      </div>
+
+      <div>
+        <ul>
+          {tasksList.map((task, index) => (
+            <li key={index}>{task}</li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
 }
 
 export default App;
