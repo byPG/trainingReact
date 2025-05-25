@@ -29,7 +29,10 @@ function App() {
       <div>
         <ul>
           {tasksList.map((task, index) => (
-            <li key={index}>{task}</li>
+            <li key={index}>
+              <input type="checkbox" />
+              {task}
+            </li>
           ))}
         </ul>
       </div>
