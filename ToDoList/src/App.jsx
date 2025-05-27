@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="content">
       <header>
         {/* <img src="" alt="" /> */}
         <h2>To Do List</h2>
@@ -36,7 +36,7 @@ function App() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
