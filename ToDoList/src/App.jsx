@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="content">
-      {/* <img src="" alt="" /> */}
+      <img src="../src/assets/pngegg.png" alt="list" />
       <div className="mainContent">
         <header>
           <h2>Todo App</h2>
