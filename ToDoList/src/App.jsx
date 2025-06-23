@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="content">
-      <img src="../src/assets/pngegg.png" alt="list" />
+      <img className="mainImg" src="../src/assets/pngegg.png" alt="list" />
       <div className="mainContent">
         <header>
           <h2>Todo App</h2>
@@ -28,10 +28,10 @@ function App() {
         <div>
           <ul>
             {tasksList.map((task, index) => (
-              <li key={index}>
+              <ol key={index}>
                 <input type="checkbox" />
                 {task}
-              </li>
+              </ol>
             ))}
           </ul>
         </div>

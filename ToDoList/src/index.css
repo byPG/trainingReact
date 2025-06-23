@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+:root {
+  --basicBlue: rgb(0, 85, 255);
+  --onFocusBlue: rgb(0, 0, 255);
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -26,7 +31,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   height: 60vh;
   width: 50vh;
-  border-radius: 5%;
+  border-radius: 2%;
   padding: 25px;
   -webkit-box-shadow: 0px 0px 22px 4px rgba(66, 68, 90, 0.35);
   -moz-box-shadow: 0px 0px 22px 4px rgba(66, 68, 90, 0.35);
@@ -46,9 +51,9 @@
 }
 
 .mainContent div button {
-  width: 13%;
+  width: 12%;
   height: 30px;
-  background-color: rgb(0, 85, 255);
+  background-color: var(--basicBlue);
   color: white;
   font-size: 15px;
   font-weight: bold;
@@ -58,5 +63,19 @@
 }
 
 .mainContent div button:hover {
-  background-color: blue;
+  background-color: var(--onFocusBlue);
+}
+
+.mainImg {
+  height: 25vh;
+  position: relative;
+  top: -50px;
+}
+
+input {
+  border: 1px solid var(--basicBlue);
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
