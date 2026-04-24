@@ -20,7 +20,6 @@ function App() {
       <main>
         <button onClick={handleClick}>Kliknij!!</button>
         <button onClick={handleReset}>Resetuj</button>
-        <input type="text" onChange={(e) => console.log(e.target.value)} />
         <p>Kliknięto: {counter}</p>
       </main>
     </div>
